@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_history"/>
+    <TextView
+        android:id="@+id/tv_item_history_text"
+        android:layout_marginStart="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fontFamily="@font/fzdx_medium"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:text="中华漆艺"/>
+
+    <ImageView
+        android:id="@+id/iv_item_history_delete"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_search_close"/>
+
+</LinearLayout>

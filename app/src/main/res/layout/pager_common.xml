@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/msv_pager_common"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/msv_common"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="23dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pager_common"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_offline" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

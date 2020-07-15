@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".communication.OffLineActivity"
+    android:fitsSystemWindows="true"
+   >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:onClick="back"
+                    android:src="@drawable/ic_return_black"/>
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/tv_offline_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="23sp"
+                    android:fontFamily="@font/fzdx_strong"
+                    android:text="活动标题"/>
+            </LinearLayout>
+            <TextView style="@style/divider" />
+            <com.youth.banner.Banner
+                android:id="@+id/banner_offline"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+            </com.youth.banner.Banner>
+            <TextView style="@style/divider" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_time"/>
+                <TextView
+                    android:id="@+id/tv_offline_time"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bar_grey"
+                    android:text="2019-03-06 14:00"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_locate"/>
+                <TextView
+                    android:id="@+id/tv_offline_site"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bar_grey"
+                    android:text="浙江省宁波市江东区幸福小镇大厅"/>
+            </LinearLayout>
+            <TextView style="@style/divider" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_group" />
+                <TextView
+                    android:id="@+id/tv_offline_member_count"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="参与人数 56"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/tv_offline_join"
+                    android:padding="8dp"
+                    android:textColor="#FFF"
+                    android:fontFamily="@font/fzdx_medium"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即参与"
+                    android:onClick="join"
+                    android:background="@drawable/round_corners_orange_back"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_offline"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:minHeight="400dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

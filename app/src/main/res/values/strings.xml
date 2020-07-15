@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">天工</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+
+    </string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="topic_text">他来自浙江宁波，在宣传待的一年中让他掌握了不俗的拍摄技巧， 目前仍在努力学习中。想要学到他的技术，摄影、推送，全都在宣传，赶紧来吧。</string>
+    <string name="long_text">整个驻留项目遵循“保护、传承、活化、创新”的原则，探访苏绣、缂丝、桃花坞木版年画、剪（刻）纸、苏灯等姑苏本地代表性非遗手工艺项目，体验本土文化，与非遗传承人深度探讨创意，打造具有苏州元素及前沿创新的设计作品，助力创承工作。所有驻地成果将以“苏州国际设计周”为节点，向大众呈现。</string>
+    <string name="ctr">据传，吹糖人儿祖师爷是刘伯温。据说朱元璋为了自己的皇位能一代代传下去，就造“功臣阁”火烧功臣。刘伯温侥幸逃脱，被一个挑糖人儿担子的老人救下，两人调换服装，从此刘伯温隐姓埋名，天天挑糖人担换破烂。在卖糖的过程中，刘伯温创造性地把糖加热变软后制作各种糖人儿，有小鸡小狗什么的，煞是可爱，小孩子争先购买。在路上，许多人向刘伯温请教学吹糖人儿，刘伯温一一教会了他们，于是，这门手艺就一传十、十传百的，传到现在据说有600多年的历史了。</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="craft_type">
+        <item>丝绸织染</item>
+        <item>雕塑</item>
+        <item>造纸与印刷</item>
+        <item>金银细金工艺</item>
+        <item>绘画</item>
+        <item>剪纸</item>
+        <item>景泰蓝</item>
+        <item>陶瓷</item>
+        <item>漆艺</item>
+        <item>中药炮制</item>
+    </string-array>
+
+</resources>

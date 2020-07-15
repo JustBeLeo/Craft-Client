@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".profile.IndexActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ctl_index"
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/purple_red"
+            app:title="爱笑的Leo"
+            android:fitsSystemWindows="true"
+            android:background="#fff">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:src="@mipmap/profile_background"
+                    android:scaleType="fitXY"/>
+                <LinearLayout
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <!--头像加上圆形框框-->
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp">
+                        <TextView
+                            android:layout_width="95dp"
+                            android:layout_height="95dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/round"/>
+                        <ImageView
+                            android:id="@+id/iv_index_avatar"
+                            android:layout_gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:background="@drawable/round"
+                            android:src="@mipmap/avatar_round"/>
+                    </FrameLayout>
+                    <!--名字，性别和修改个人资料-->
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+                        <TextView
+                            android:id="@+id/tv_index_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/fzdx_medium"
+                            android:textColor="#000"
+                            android:textSize="18sp"
+                            android:text="爱笑的Leo"/>
+                        <ImageView
+                            android:id="@+id/iv_index_gender"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_male"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/redpurple_back"
+                            android:textColor="@color/purple_red"
+                            android:text="修改个人资料"
+                            android:onClick="edit"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tv_index_region"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="浙江宁波"/>
+
+                    <!--关注与粉丝-->
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp">
+                        <TextView
+                            android:id="@+id/tv_index_focus"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/fzdx_medium"
+                            android:textColor="#000"
+                            android:text="68"/>
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="关注"/>
+                        <TextView
+                            android:id="@+id/tv_index_focused"
+                            android:layout_marginStart="40dp"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/fzdx_medium"
+                            android:textColor="#000"
+                            android:text="30"/>
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="粉丝"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_talk" />
+                        <TextView
+                            android:id="@+id/tv_index_mtto"
+                            android:layout_marginStart="10dp"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="我曾经也被击倒过"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_index"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="10dp"
+                app:navigationIcon="@drawable/ic_return_32"
+                app:layout_collapseMode="pin"
+                app:titleTextColor="#fff">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:paddingTop="8dp">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tl_index"
+                    style="@style/MyTabLayoutStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    app:tabIndicatorFullWidth="false">
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="动态" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="投稿" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="收藏" />
+                </android.support.design.widget.TabLayout>
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_index"
+                android:layout_width="match_parent"
+                android:layout_height="800dp" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
