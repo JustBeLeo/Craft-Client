@@ -18,6 +18,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -172,6 +173,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 //设置主布局随菜单滑动而滑动
                 int drawerViewWidth = drawerView.getWidth();
                 clMain.setTranslationX(drawerViewWidth * slideOffset);
+                Log.e("TAG", "onDrawerSlide: 测试GitHub提交情况" );
             }
 
             @Override
